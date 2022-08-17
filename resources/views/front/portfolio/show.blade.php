@@ -23,6 +23,18 @@
                   </div>
                   @endforeach
                 @endif
+
+                @php
+                $imgs = json_decode($project->images);
+                @endphp
+
+                @foreach ($imgs as $img)
+                <div class="col-md-4 box">
+                    <a class="box-image" data-src="{{ asset($img) }}" href="" data-fancybox="demo">
+                        <img class="img-fluid" src="{{ asset($img) }}" alt="alt">
+                    </a>
+                </div>
+                @endforeach
             </div>
         </div>
     </div>
