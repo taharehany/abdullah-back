@@ -17,7 +17,7 @@ class PortfolioController extends Controller
     }
     public function show($id)
     {
-        $project = Project::find($id)->first();
+        $project = Project::with('view')->findorfail($id);
 
         return view('front.portfolio.show', compact('project'));
     }
