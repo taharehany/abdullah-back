@@ -60,7 +60,7 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="">Select type</label>
-                                <select class="form-select" id="" required="">
+                                <select class="form-select" name="type" required="">
                                     <option value="branding">branding</option>
                                     <option value="social_media">social media</option>
                                     <option value="ui_ux_design">ui ux design</option>

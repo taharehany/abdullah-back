@@ -19,6 +19,7 @@ class Project extends Model
         'images',
         'description',
         'main_image',
+        'type',
     ];
 
     public function Details(){
