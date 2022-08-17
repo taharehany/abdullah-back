@@ -31,30 +31,35 @@
                         <div class="col-lg-12" id="repeate_container">
                            @if(count($data->Details))
                            @foreach($data->Details as $value)
-                           <div class="row repeated">
-                              <div class="col-lg-8">
-                                 <div class="form-group">
-                                    <label>image</label>
-                                    <img width="200" height="100" src="{{ asset($value->image) }}">
+                              <div class="row repeated">
+                                 <div class="col-lg-8">
+                                    <div class="form-group">
+                                       <label>image</label>
+                                       <img width="200" height="100" src="{{ asset($value->image) }}">
 
-                                    <input class="form-control" type="file" value="{{$value->image}}" name="image[{{$value->id}}]" multiple accept=".png, .jpg, .jpeg, .svg">
+                                       <input class="form-control" type="file" value="{{$value->image}}" name="image[{{$value->id}}]" multiple accept=".png, .jpg, .jpeg, .svg">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-2">
+                                    <div class="form-group">
+                                       <label>in desktop (max 12)</label>
+                                       <input class="form-control" type="number" value="{{$value->desktop_col}}" min="1" max="12" name="desktop_col[{{$value->id}}]" placeholder="in desktop" required="">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-2">
+                                    <div class="form-group">
+                                       <label>in mobile (max 12)</label>
+                                       <input class="form-control" type="number" value="{{ $value->mobile_col}}" min="1" max="12" name="mobile_col[{{$value->id}}]" placeholder="in mobile" required="">
+                                    </div>
                                  </div>
                               </div>
-                              <div class="col-lg-2">
-                                 <div class="form-group">
-                                    <label>in desktop (max 12)</label>
-                                    <input class="form-control" type="number" value="{{$value->desktop_col}}" min="1" max="12" name="desktop_col[{{$value->id}}]" placeholder="in desktop" required="">
-                                 </div>
-                              </div>
-                              <div class="col-lg-2">
-                                 <div class="form-group">
-                                    <label>in mobile (max 12)</label>
-                                    <input class="form-control" type="number" value="{{ $value->mobile_col}}" min="1" max="12" name="mobile_col[{{$value->id}}]" placeholder="in mobile" required="">
-                                 </div>
-                              </div>
-                           </div>
                            @endforeach
                            @endif
+                           <div class="col-lg-12 mb-5">
+                              <div class="form-group">
+                                 <button id="add_field">+</button>
+                              </div>
+                           </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
