@@ -1,0 +1,17 @@
+#add_field {
+  background-color: red;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  line-height: normal;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.main-content .global-area .form form .form-group label {
+  text-transform: capitalize;
+}
+
+.main-content .global-area table.custom .table-data-feature {
+  grid-template-columns: repeat(3, calc(33.3333333333% - 5px));
+}/*# sourceMappingURL=over-style.css.map */
