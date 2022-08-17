@@ -11,7 +11,7 @@ class PortfolioController extends Controller
     public function index()
     {
         //portfolio
-        $projects = Project::get()->orderby('id', 'DESC');
+        $projects = Project::orderBy('id', 'DESC')->get();
 
         return view('front.portfolio', compact('projects'));
     }
