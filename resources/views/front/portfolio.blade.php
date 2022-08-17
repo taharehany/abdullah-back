@@ -40,7 +40,7 @@
             @foreach ($projects as $project)
             @if ($project->type == 'social_media')
             <div class="box"><a href="single-portfolio.html">
-                    <div class="box-image"><img class="img-fluid" src="images/works/01.jpg" alt="alt"></div>
+                    <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
                 </a>
                 <div class="box-title"><a href="single-portfolio.html">
                         <h3>here is title</h3>
@@ -66,7 +66,7 @@
             @foreach ($projects as $project)
             @if ($project->type == 'ui_ux_design')
             <div class="box"><a href="single-portfolio.html">
-                    <div class="box-image"><img class="img-fluid" src="images/works/01.jpg" alt="alt"></div>
+                    <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
                 </a>
                 <div class="box-title"><a href="single-portfolio.html">
                         <h3>here is title</h3>
