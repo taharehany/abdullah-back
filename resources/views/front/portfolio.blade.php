@@ -16,7 +16,7 @@
             <div class="box"><a href="{{ route('portfolio.show', $project->id) }}">
                     <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
                 </a>
-                <div class="box-title"><a href="single-portfolio.html">
+                <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
                         <h3>{{ $project->title }}</h3>
                     </a></div>
                 <div class="box-description">
@@ -29,6 +29,7 @@
     </div>
 </section>
 <!--branding portfolio-->
+
 <!--social media portfolio-->
 <section class="social-media-portfolio">
     <div class="container">
@@ -39,10 +40,10 @@
         <div class="content">
             @foreach ($projects as $project)
             @if ($project->type == 'social_media')
-            <div class="box"><a href="single-portfolio.html">
-                    <div class="box-image"><img class="img-fluid" src="images/works/01.jpg" alt="alt"></div>
+            <div class="box"><a href="{{ route('portfolio.show', $project->id) }}">
+                    <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
                 </a>
-                <div class="box-title"><a href="single-portfolio.html">
+                <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
                         <h3>here is title</h3>
                     </a></div>
                 <div class="box-description">
@@ -55,6 +56,7 @@
     </div>
 </section>
 <!--social media portfolio-->
+
 <!--ui ux portfolio-->
 <section class="web-portfolio">
     <div class="container">
@@ -65,10 +67,10 @@
         <div class="content">
             @foreach ($projects as $project)
             @if ($project->type == 'ui_ux_design')
-            <div class="box"><a href="single-portfolio.html">
-                    <div class="box-image"><img class="img-fluid" src="images/works/01.jpg" alt="alt"></div>
+            <div class="box"><a href="{{ route('portfolio.show', $project->id) }}">
+                    <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
                 </a>
-                <div class="box-title"><a href="single-portfolio.html">
+                <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
                         <h3>here is title</h3>
                     </a></div>
                 <div class="box-description">
