@@ -129,7 +129,6 @@ class ProjectsController extends Controller
          }
       }
       return $general ? redirect(route('projects.index'))->with(['success' => 'تم تعديل بنجاح']) : redirect()->back();
-
    }
 
    /**
