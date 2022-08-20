@@ -59,7 +59,7 @@
                 <div class="mobile-menu">
                     <div class="content-mobile">
                         <div class="logo"><img class="img-fluid" src="{{ asset('front/images/header-logo.svg') }}" alt="alt"></div>
-                        <div class="links"><a href="portfolio.html">portfolio </a><a href="about.html">about me<span class="separ">&</span>contacts</a></div>
+                        <div class="links"><a href="{{ route('portfolio') }}">portfolio </a><a href="{{ route('about') }}">about me<span class="separ">&</span>contacts</a></div>
                         <div class="social-media"><a href=""><i class="fa-brands fa-behance"> </i></a><a href="" style="color: #FF0000"><i class="fa-solid fa-envelope"> </i></a><a href="" style="color: #3DDE5A"><i class="fa-brands fa-whatsapp"></i></a></div>
                     </div>
                     <div class="close" id="close-menu">
