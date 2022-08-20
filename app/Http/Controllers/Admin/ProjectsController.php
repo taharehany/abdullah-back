@@ -100,7 +100,7 @@ class ProjectsController extends Controller
    public function update(Request $request, $id)
    {
       $data = $request->all();
-      $general = Project::where('id',$id)->first();
+      $general = Project::where('id', $id)->first();
       if ($request->hasFile('main_image')) {
          $data['main_image'] = upload_file($request->file('main_image'), 'main_image');
       } else {
@@ -109,23 +109,22 @@ class ProjectsController extends Controller
 
       $general->update($data);
 
-      if($request->image){
+      if($request->desktop_col){
+         foreach($request->desktop_col as $key=>$value){
+            if(isset($request->image[$key]) &&is_file($request->image[$key])){
+               $image = upload_file($request->image[$key], 'project_details');
 
-         foreach($request->image as $key=>$value){
-            if(is_file($value)){
-            $image = upload_file($value, 'project_details');
-               ProjectDetails::updateOrCreate(
-                  [
-                     'id'=>$key
-                  ]
-                  ,[
-                  'project_id'=>$id,
-                  'image'=>$image,
-                  'desktop_col'=>$request->desktop_col[$key],
-                  'mobile_col'=>$request->mobile_col[$key],
-               ]);
-
+            }else{
+               $image = ProjectDetails::find($key)->image;
             }
+            ProjectDetails::updateOrCreate(
+               ['id'=>$key]
+               ,[
+               'project_id'=>$id,
+               'image'=>$image,
+               'desktop_col'=>$value,
+               'mobile_col'=>$request->mobile_col[$key],
+            ]);
          }
       }
       return $general ? redirect(route('projects.index'))->with(['success' => 'تم تعديل بنجاح']) : redirect()->back();
