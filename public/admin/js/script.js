@@ -4,6 +4,13 @@ $(document).ready(function () {
    let navbarToggler = $(".topnav .navbar-toggler");
    let header = $("header");
 
+   //editor (https://ckeditor.com/docs/ckeditor5/latest/)
+   // ClassicEditor.create(document.querySelector('#editor')).then(editor => {
+   //    console.log("editor is running");
+   // }).catch(error => {
+   //    console.error(error);
+   // });
+
    //toggle between menue and x in navbar
    $("header .navbar-toggler").on("click", function () {
       if (navbarCollapse.hasClass("active")) {
@@ -58,7 +65,9 @@ $(document).ready(function () {
    //     }
    //   });
 
-   $("#example").DataTable();
+   $("#example").DataTable({
+      sho
+   });
 
    // $(window).on("scroll", function () {
    //   if ($(this).scrollTop() > 1) {
@@ -142,7 +151,7 @@ $(document).ready(function () {
       $('#repeate_container').append(`${repeateContainer}`)
    })
 
-   $(document).on('click','.remove_field', function (e) {
+   $(document).on('click', '.remove_field', function (e) {
 
       e.preventDefault()
       $(this).closest('div[class="row repeated"]').remove();

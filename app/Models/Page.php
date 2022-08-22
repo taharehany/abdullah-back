@@ -5,14 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ProjectDetails extends Model
+class Page extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+      'title',
       'image',
-      'desktop_col',
-      'mobile_col',
-      'project_id',
-  ];
+      'description',
+   ];
 }
