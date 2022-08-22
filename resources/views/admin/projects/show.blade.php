@@ -21,7 +21,7 @@
                                 <textarea class="form-control" name="description" placeholder="description" required="" rows="5" readonly>{{ old('description', $data->description) }}</textarea>
                             </div>
                         </div>
-                        <div class="col-lg-12">
+                        <!-- <div class="col-lg-12">
                             <div class="form-group">
                                 <label>main image</label>
                                 <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg" >
@@ -42,7 +42,7 @@
                                     <option value="ui_ux_design">ui ux design</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </form>
             </div>
