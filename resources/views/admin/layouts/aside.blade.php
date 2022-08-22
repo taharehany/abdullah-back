@@ -24,7 +24,7 @@
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" role="button">
-                  <i class="fas fa-home"></i>about me in home
+                  <i class="fas fa-home"></i>about me boxs
                </a>
                <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="{{ route('about.index') }}">show</a></li>
@@ -33,7 +33,7 @@
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" role="button">
-                  <i class="fas fa-home"></i>about me
+                  <i class="fas fa-home"></i>about me page
                </a>
                <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="{{ route('aboutme.edit') }}">edit</a></li>

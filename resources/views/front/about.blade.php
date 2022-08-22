@@ -82,16 +82,20 @@
          </div>
          <div class="info">
             <div class="box">
-               <a href="tel:{{ settings()->mobile1 }}"> <i class="fa-solid fa-phone-flip"> </i><span>01063075478</span></a>
+               <a href="tel:{{ settings()->mobile1 }}"> <i class="fa-solid fa-phone-flip"> </i>
+                  <span>{{ settings()->mobile1 }}</span></a>
             </div>
             <div class="box">
-               <a href="mailto:{{ settings()->email1 }}"> <i class="fa-solid fa-envelope"> </i><span>abdallahdesigns3@gmail.com</span></a>
+               <a href="mailto:{{ settings()->email1 }}"> <i class="fa-solid fa-envelope"> </i>
+                  <span>{{ settings()->email1 }}</span></a>
             </div>
             <div class="box">
-               <a href="tel:{{ settings()->mobile2 }}"> <i class="fa-solid fa-phone-flip"> </i><span>01148803505</span></a>
+               <a href="tel:{{ settings()->mobile2 }}"> <i class="fa-solid fa-phone-flip"> </i>
+                  <span>{{ settings()->mobile2 }}</span></a>
             </div>
             <div class="box">
-               <a href="mailto:{{ settings()->email2 }}"> <i class="fa-solid fa-envelope"> </i><span>abdalla.ebra500@gmail.com</span></a>
+               <a href="mailto:{{ settings()->email2 }}"> <i class="fa-solid fa-envelope"> </i>
+                  <span>{ settings()->email2 }}</span></a>
             </div>
          </div>
       </div>
