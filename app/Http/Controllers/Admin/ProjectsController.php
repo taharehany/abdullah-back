@@ -48,7 +48,6 @@ class ProjectsController extends Controller
       $general = Project::create($data);
 
       if($request->image){
-
          foreach($request->image as $key=>$value){
             if(is_file($value)){
             $image = upload_file($value, 'project_details');
