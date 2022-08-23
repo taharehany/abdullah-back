@@ -95,7 +95,7 @@
             </div>
             <div class="box">
                <a href="mailto:{{ settings()->email2 }}"> <i class="fa-solid fa-envelope"> </i>
-                  <span>{ settings()->email2 }}</span></a>
+                  <span>{{ settings()->email2 }}</span></a>
             </div>
          </div>
       </div>

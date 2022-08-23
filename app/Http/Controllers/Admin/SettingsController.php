@@ -33,27 +33,27 @@ class SettingsController extends Controller
       $general = Setting::first();
 
       if ($request->hasFile('small_logo')) {
-         $data['small_logo'] = upload_file($request->file('small_logo'), 'small_logo');
+         $data['small_logo'] = upload_image($request->file('small_logo'), 'small_logo');
       } else {
          $data['small_logo'] = $general->image;
       }
       if ($request->hasFile('small_logo_dark')) {
-         $data['small_logo_dark'] = upload_file($request->file('small_logo_dark'), 'small_logo_dark');
+         $data['small_logo_dark'] = upload_image($request->file('small_logo_dark'), 'small_logo_dark');
       } else {
          $data['small_logo_dark'] = $general->image;
       }
       if ($request->hasFile('inline_logo')) {
-         $data['inline_logo'] = upload_file($request->file('inline_logo'), 'inline_logo');
+         $data['inline_logo'] = upload_image($request->file('inline_logo'), 'inline_logo');
       } else {
          $data['inline_logo'] = $general->image;
       }
       if ($request->hasFile('inline_logo_dark')) {
-         $data['inline_logo_dark'] = upload_file($request->file('inline_logo_dark'), 'inline_logo_dark');
+         $data['inline_logo_dark'] = upload_image($request->file('inline_logo_dark'), 'inline_logo_dark');
       } else {
          $data['inline_logo_dark'] = $general->image;
       }
       if ($request->hasFile('cv')) {
-         $data['cv'] = upload_file($request->file('cv'), 'cv');
+         $data['cv'] = upload_file($request->file('cv'), 'pdf');
       } else {
          $data['cv'] = $general->image;
       }
