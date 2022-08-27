@@ -12,9 +12,8 @@
          </a>
       </div>
       <div class="main-title">
-         <h2>Lince tech branding</h2>
-         <p>ABOUT : When it comes to the quality of the fence system, you are in the right place with Lince UG. We are a company that specializes in individual solutions in the field of slat and industrial fences Our most requested products are high-quality design fences made of lamellar aluminium.</p>
-         <p>Mission : Our mission was to rebuild the brand to suit the modern time and also to suit the company's modern trends and its new distinguished services.</p>
+         <h2>{{ $project->title }}</h2>
+         <p>ABOUT: {{ $project->description }}</p>
       </div>
       <div class="content">
          <div class="row">
