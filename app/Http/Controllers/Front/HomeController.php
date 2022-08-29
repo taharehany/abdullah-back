@@ -15,8 +15,8 @@ class HomeController extends Controller
    public function index()
    {
       //portfolio
-      $branding = Project::paginate(5);
-      $social = Project::paginate(3);
+      $branding = Project::where('type', 'branding')->paginate(5);
+      $social = Project::where('type', 'social_media')->paginate(3);
       $cando = CanDo::paginate(3);
       $about = AboutMe::first();
       $aboutme = Page::where('identifier', 'aboutme')->first();
