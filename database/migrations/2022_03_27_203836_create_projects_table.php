@@ -17,6 +17,7 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
+            $table->text('mission');
             $table->string('images')->nullable();
             $table->string('main_image');
             $table->enum('type', ['branding', 'social_media', 'ui_ux_design']);

@@ -17,8 +17,14 @@
                   </div>
                   <div class="col-lg-12">
                      <div class="form-group">
-                        <label>description</label>
+                        <label>About</label>
                         <textarea class="form-control" name="description" placeholder="description" required="" rows="5"></textarea>
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>Mission</label>
+                        <textarea class="form-control" name="mission" placeholder="mission" required="" rows="5"></textarea>
                      </div>
                   </div>
                   <div class="col-lg-12 mb-5">

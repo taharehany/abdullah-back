@@ -23,6 +23,12 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
+                                <label>Mission</label>
+                                <textarea class="form-control" name="mission" placeholder="mission" required="" rows="5">{{ old('mission', $data->mission) }}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
                                 <label>main image</label>
                                 <img width="100" height="100" src="{{ asset($data->main_image) }}">
                                 <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg" >

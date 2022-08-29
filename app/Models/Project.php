@@ -18,6 +18,7 @@ class Project extends Model
         'title',
         'images',
         'description',
+        'mission',
         'main_image',
         'type',
     ];
