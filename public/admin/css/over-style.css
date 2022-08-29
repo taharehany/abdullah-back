@@ -14,4 +14,11 @@
 
 .main-content .global-area table.custom .table-data-feature {
   grid-template-columns: repeat(3, calc(33.3333333333% - 5px));
+}
+
+.show-page .box-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=over-style.css.map */

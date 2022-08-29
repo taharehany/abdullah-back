@@ -14,7 +14,8 @@
                      <th>#</th>
                      <th>title</th>
                      <th>description</th>
-                     <th>image </th>
+                     <th>type</th>
+                     <th>image</th>
                      <th>created at</th>
                      <th>controle</th>
                   </tr>
@@ -25,6 +26,7 @@
                      <td class="dtr-control">{{ $key + 1 }}</td>
                      <td>{{ $value->title }}</td>
                      <td>{{ $value->description }}</td>
+                     <td>{{ $value->type }}</td>
                      <td><img src="{{ asset($value->main_image) }}" style="width: 100px" alt=""></td>
                      <td>{{ $value->created_at }}</td>
                      <td>
