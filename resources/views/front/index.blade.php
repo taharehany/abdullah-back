@@ -45,7 +45,18 @@
    <div class="container">
       <div class="content">
          <div class="row">
-            @foreach ($projects as $project)
+            @foreach ($branding as $project)
+            <div class="col-lg-3 col-md-4">
+               <div class="box">
+                  <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
+                  <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
+                        <h3>{{ $project->title }}<img src="{{ asset('front/images/icons/arrow.svg') }}" alt=""></h3>
+                     </a></div>
+               </div>
+            </div>
+            @endforeach
+
+            @foreach ($social as $project)
             <div class="col-lg-3 col-md-4">
                <div class="box">
                   <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>

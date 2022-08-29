@@ -15,11 +15,12 @@ class HomeController extends Controller
    public function index()
    {
       //portfolio
-      $projects = Project::paginate(8);
+      $branding = Project::paginate(5);
+      $social = Project::paginate(3);
       $cando = CanDo::paginate(3);
       $about = AboutMe::first();
       $aboutme = Page::where('identifier', 'aboutme')->first();
 
-      return view('front.index', compact('projects', 'cando', 'about', 'aboutme'));
+      return view('front.index', compact('branding', 'social', 'cando', 'about', 'aboutme'));
    }
 }
