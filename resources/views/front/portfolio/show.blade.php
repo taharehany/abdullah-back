@@ -6,11 +6,11 @@
 <!--single portfolio-->
 <section class="single-portfolio">
    <div class="container">
-      <div class="main-image">
+      <!-- <div class="main-image">
          <a class="box-image" data-src="{{ asset($project->main_image) }}" href="" data-fancybox="demo">
             <img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt">
          </a>
-      </div>
+      </div> -->
       <div class="main-title">
          <h2>{{ $project->title }}</h2>
          <p>ABOUT: {{ $project->description }}</p>
