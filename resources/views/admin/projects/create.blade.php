@@ -33,15 +33,20 @@
                         <textarea class="form-control" name="mission" placeholder="mission" required="" rows="5"></textarea>
                      </div>
                   </div>
-                  <div class="col-lg-12 mb-5">
+                  <div class="col-lg-12">
                      <div class="form-group">
                         <label>main image</label>
                         <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg">
                      </div>
                   </div>
+                  <div class="col-lg-12 mb-5">
+                     <div class="form-group">
+                        <button id="add_field">+</button>
+                     </div>
+                  </div>
                   <div class="col-lg-12" id="repeate_container">
-                     <div class="row repeated">
-                        <div class="col-lg-8">
+                     <!-- <div class="row repeated">
+                        <div class="col-lg-7">
                            <div class="form-group">
                               <label>image</label>
                               <input class="form-control" type="file" name="image[]" multiple accept=".png, .jpg, .jpeg, .svg">
@@ -59,12 +64,12 @@
                               <input class="form-control" type="number" min="1" max="12" name="mobile_col[]" placeholder="in mobile" required="">
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-12 mb-5">
-                     <div class="form-group">
-                        <button id="add_field">+</button>
-                     </div>
+                        <div class="col-lg-1">
+                           <div class="form-group remove-div">
+                              <button type="button" class="remove_field">-</button>
+                           </div>
+                        </div>
+                     </div> -->
                   </div>
                   <div class="col-lg-12">
                      <div class="form-group">

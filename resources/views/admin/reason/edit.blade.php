@@ -24,7 +24,7 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>main image</label>
-                                <img width="100" height="100" src="{{ asset($data->image) }}">
+                                <img class="preview" src="{{ asset($data->image) }}">
                                 <input class="form-control" type="file" name="image" accept=".png, .jpg, .jpeg, .svg" >
                             </div>
                         </div>

@@ -47,17 +47,16 @@ class ProjectsController extends Controller
 
       $general = Project::create($data);
 
-      if($request->image){
-         foreach($request->image as $key=>$value){
-            if(is_file($value)){
-            $image = upload_file($value, 'project_details');
+      if ($request->image) {
+         foreach ($request->image as $key => $value) {
+            if (is_file($value)) {
+               $image = upload_file($value, 'project_details');
                ProjectDetails::create([
-                  'project_id'=>$general->id,
-                  'image'=>$image,
-                  'desktop_col'=>$request->desktop_col[$key],
-                  'mobile_col'=>$request->mobile_col[$key],
+                  'project_id' => $general->id,
+                  'image' => $image,
+                  'desktop_col' => $request->desktop_col[$key],
+                  'mobile_col' => $request->mobile_col[$key],
                ]);
-
             }
          }
       }
@@ -108,22 +107,22 @@ class ProjectsController extends Controller
 
       $general->update($data);
 
-      if($request->desktop_col){
-         foreach($request->desktop_col as $key=>$value){
-            if(isset($request->image[$key]) &&is_file($request->image[$key])){
+      if ($request->desktop_col) {
+         foreach ($request->desktop_col as $key => $value) {
+            if (isset($request->image[$key]) && is_file($request->image[$key])) {
                $image = upload_file($request->image[$key], 'project_details');
-
-            }else{
+            } else {
                $image = ProjectDetails::find($key)->image;
             }
             ProjectDetails::updateOrCreate(
-               ['id'=>$key]
-               ,[
-               'project_id'=>$id,
-               'image'=>$image,
-               'desktop_col'=>$value,
-               'mobile_col'=>$request->mobile_col[$key],
-            ]);
+               ['id' => $key],
+               [
+                  'project_id' => $id,
+                  'image' => $image,
+                  'desktop_col' => $value,
+                  'mobile_col' => $request->mobile_col[$key],
+               ]
+            );
          }
       }
       return $general ? redirect(route('projects.index'))->with(['success' => 'تم تعديل بنجاح']) : redirect()->back();
@@ -141,4 +140,9 @@ class ProjectsController extends Controller
       $general->delete();
       return redirect(route('projects.index'))->with(['success' => 'Deleted']);
    }
+
+    public function project_data_remove (Request $request) {
+      $project = ProjectDetails::findorfail($request->id)->delete();
+      return response()->json(['status'=>1]);
+    }
 }

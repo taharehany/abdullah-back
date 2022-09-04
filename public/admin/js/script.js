@@ -131,8 +131,8 @@ $(document).ready(function () {
          </div>
       </div>
       <div class="col-lg-1">
-         <div class="form-group">
-         <button type="button" class="remove_field">-</button>
+         <div class="form-group remove-div">
+            <button type="button" class="remove_field">-</button>
          </div>
       </div>
       </div>`
@@ -143,7 +143,15 @@ $(document).ready(function () {
    })
 
    $(document).on('click','.remove_field', function (e) {
-
+      $.ajax({
+         url: delete_route,
+         type: 'GET',
+         data: {
+            'id':$(this).attr('data-item-id')
+         },
+         dataType: 'json', // added data type
+         success: function(res) {}
+     });
       e.preventDefault()
       $(this).closest('div[class="row repeated"]').remove();
    })

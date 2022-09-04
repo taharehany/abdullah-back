@@ -36,19 +36,23 @@
                   <div class="col-lg-12">
                      <div class="form-group">
                         <label>main image</label>
-                        <img width="100" height="100" src="{{ asset($data->main_image) }}">
+                        <img class="preview" src="{{ asset($data->main_image) }}">
                         <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg">
+                     </div>
+                  </div>
+                  <div class="col-lg-12 mb-5">
+                     <div class="form-group">
+                        <button id="add_field">+</button>
                      </div>
                   </div>
                   <div class="col-lg-12" id="repeate_container">
                      @if(count($data->Details))
                      @foreach($data->Details as $value)
                      <div class="row repeated">
-                        <div class="col-lg-8">
+                        <div class="col-lg-7">
                            <div class="form-group">
                               <label>image</label>
-                              <img width="100" height="100" src="{{ asset($value->image) }}">
-
+                              <img class="preview" class="preview" src="{{ asset($value->image) }}">
                               <input class="form-control" type="file" value="{{$value->image}}" name="image[{{$value->id}}]" multiple accept=".png, .jpg, .jpeg, .svg">
                            </div>
                         </div>
@@ -64,14 +68,14 @@
                               <input class="form-control" type="number" value="{{ old('mobile_col', $value->mobile_col) }}" min="1" max="12" name="mobile_col[{{$value->id}}]" placeholder="in mobile" required="">
                            </div>
                         </div>
+                        <div class="col-lg-1">
+                           <div class="form-group remove-div">
+                              <button type="button" data-item-id="{{$value->id}}" class="remove_field">-</button>
+                           </div>
+                        </div>
                      </div>
                      @endforeach
                      @endif
-                     <div class="col-lg-12 mb-5">
-                        <div class="form-group">
-                           <button id="add_field">+</button>
-                        </div>
-                     </div>
                   </div>
                   <div class="col-lg-12">
                      <div class="form-group">
@@ -104,4 +108,8 @@
       </div>
    </div>
 </div>
+
+<script>
+   var delete_route = "{{route('project.project_data_remove')}}"
+</script>
 @endsection

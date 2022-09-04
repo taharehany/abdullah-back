@@ -30,6 +30,10 @@ Route::group(
 
       Route::get('/settings', [SettingsController::class, 'edit'])->name('settings.edit');
       Route::put('/settings', [SettingsController::class, 'update'])->name('settings.update');
+
+      Route::get('/project_data_remove', [ProjectsController::class, 'project_data_remove'])->name('project.project_data_remove');
+
+
    }
 );
 

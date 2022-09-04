@@ -66,28 +66,28 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>small logo</label>
-                                <img width="100" height="100" src="{{ asset($data->small_logo) }}">
+                                <img class="preview" src="{{ asset($data->small_logo) }}">
                                 <input class="form-control" type="file" name="small_logo" accept=".png, .jpg, .jpeg, .svg" >
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>small_logo dark</label>
-                                <img width="100" height="100" src="{{ asset($data->small_logo_dark) }}">
+                                <img class="preview" src="{{ asset($data->small_logo_dark) }}">
                                 <input class="form-control" type="file" name="small_logo_dark" accept=".png, .jpg, .jpeg, .svg" >
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>inline logo</label>
-                                <img width="100" height="100" src="{{ asset($data->inline_logo) }}">
+                                <img class="preview" src="{{ asset($data->inline_logo) }}">
                                 <input class="form-control" type="file" name="inline_logo" accept=".png, .jpg, .jpeg, .svg" >
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label>inline_logo dark</label>
-                                <img width="100" height="100" src="{{ asset($data->inline_logo_dark) }}">
+                                <img class="preview" src="{{ asset($data->inline_logo_dark) }}">
                                 <input class="form-control" type="file" name="inline_logo_dark" accept=".png, .jpg, .jpeg, .svg" >
                             </div>
                         </div>
