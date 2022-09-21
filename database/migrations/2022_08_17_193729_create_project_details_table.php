@@ -17,6 +17,7 @@ class CreateProjectDetailsTable extends Migration
             $table->id();
             $table->integer('project_id');
             $table->string('image');
+            $table->integer('order');
             $table->integer('desktop_col');
             $table->integer('mobile_col');
             $table->timestamps();

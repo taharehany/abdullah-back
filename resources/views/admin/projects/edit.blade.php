@@ -49,11 +49,17 @@
                      @if(count($data->Details))
                      @foreach($data->Details as $value)
                      <div class="row repeated">
-                        <div class="col-lg-7">
+                        <div class="col-lg-5">
                            <div class="form-group">
                               <label>image</label>
                               <img class="preview" class="preview" src="{{ asset($value->image) }}">
                               <input class="form-control" type="file" value="{{$value->image}}" name="image[{{$value->id}}]" multiple accept=".png, .jpg, .jpeg, .svg">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div class="form-group">
+                              <label>project order</label>
+                              <input class="form-control" type="number" value="{{ old('order', $value->order) }}" name="order[{{$value->id}}]" placeholder="order" required="">
                            </div>
                         </div>
                         <div class="col-lg-2">

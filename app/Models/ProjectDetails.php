@@ -11,6 +11,7 @@ class ProjectDetails extends Model
 
     protected $fillable = [
       'image',
+      'order',
       'desktop_col',
       'mobile_col',
       'project_id',

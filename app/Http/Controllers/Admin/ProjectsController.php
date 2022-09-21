@@ -54,6 +54,7 @@ class ProjectsController extends Controller
                ProjectDetails::create([
                   'project_id' => $general->id,
                   'image' => $image,
+                  'order' => $request->order[$key],
                   'desktop_col' => $request->desktop_col[$key],
                   'mobile_col' => $request->mobile_col[$key],
                ]);
@@ -119,6 +120,7 @@ class ProjectsController extends Controller
                [
                   'project_id' => $id,
                   'image' => $image,
+                  'order' => $request->order[$key],
                   'desktop_col' => $value,
                   'mobile_col' => $request->mobile_col[$key],
                ]

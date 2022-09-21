@@ -46,10 +46,16 @@
                   </div>
                   <div class="col-lg-12" id="repeate_container">
                      <!-- <div class="row repeated">
-                        <div class="col-lg-7">
+                        <div class="col-lg-5">
                            <div class="form-group">
                               <label>image</label>
                               <input class="form-control" type="file" name="image[]" multiple accept=".png, .jpg, .jpeg, .svg">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div class="form-group">
+                              <label>project order</label>
+                              <input class="form-control" type="number" name="order[]" placeholder="order" required="">
                            </div>
                         </div>
                         <div class="col-lg-2">

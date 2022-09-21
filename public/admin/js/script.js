@@ -112,10 +112,16 @@ $(document).ready(function () {
    });
 
    let repeateContainer = `<div class="row repeated">
-      <div class="col-lg-7">
+      <div class="col-lg-5">
          <div class="form-group">
             <label>image</label>
             <input class="form-control" type="file" name="image[]" multiple="" accept=".png, .jpg, .jpeg, .svg">
+         </div>
+      </div>
+      <div class="col-lg-2">
+         <div class="form-group">
+            <label>project order</label>
+            <input class="form-control" type="number" name="order[]" placeholder="order" required="">
          </div>
       </div>
       <div class="col-lg-2">
@@ -132,7 +138,7 @@ $(document).ready(function () {
       </div>
       <div class="col-lg-1">
          <div class="form-group remove-div">
-            <button type="button" class="remove_field">-</button>
+            <button type="button" data-item-id="{{$value->id}}" class="remove_field">-</button>
          </div>
       </div>
       </div>`
@@ -143,6 +149,8 @@ $(document).ready(function () {
    })
 
    $(document).on('click','.remove_field', function (e) {
+      e.preventDefault()
+      $(this).closest('div[class="row repeated"]').remove();
       $.ajax({
          url: delete_route,
          type: 'GET',
@@ -152,7 +160,6 @@ $(document).ready(function () {
          dataType: 'json', // added data type
          success: function(res) {}
      });
-      e.preventDefault()
-      $(this).closest('div[class="row repeated"]').remove();
+
    })
 });
