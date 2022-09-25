@@ -120,7 +120,7 @@ $(document).ready(function () {
       </div>
       <div class="col-lg-2">
          <div class="form-group">
-            <label>project order</label>
+            <label>image order</label>
             <input class="form-control" type="number" name="order[]" placeholder="order" required="">
          </div>
       </div>

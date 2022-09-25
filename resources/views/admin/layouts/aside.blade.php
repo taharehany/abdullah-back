@@ -9,8 +9,8 @@
                   <i class="fas fa-home"></i>projects
                </a>
                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ route('projects.index') }}">show</a></li>
-                  <li><a class="dropdown-item" href="{{ route('projects.create') }}">add</a></li>
+                  <li><a class="dropdown-item" href="{{ route('projects.index') }}">Show</a></li>
+                  <li><a class="dropdown-item" href="{{ route('projects.create') }}">Add</a></li>
                </ul>
             </li>
             <li class="nav-item dropdown">
@@ -18,17 +18,17 @@
                   <i class="fas fa-home"></i>what can do
                </a>
                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ route('can.index') }}">show</a></li>
-                  <li><a class="dropdown-item" href="{{ route('can.create') }}">add</a></li>
+                  <li><a class="dropdown-item" href="{{ route('can.index') }}">Show</a></li>
+                  <li><a class="dropdown-item" href="{{ route('can.create') }}">Add</a></li>
                </ul>
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" role="button">
-                  <i class="fas fa-home"></i>about me boxs
+                  <i class="fas fa-home"></i>about me boxes
                </a>
                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ route('about.index') }}">show</a></li>
-                  <li><a class="dropdown-item" href="{{ route('about.create') }}">add</a></li>
+                  <li><a class="dropdown-item" href="{{ route('about.index') }}">Show</a></li>
+                  <li><a class="dropdown-item" href="{{ route('about.create') }}">Add</a></li>
                </ul>
             </li>
             <li class="nav-item dropdown">
@@ -36,7 +36,7 @@
                   <i class="fas fa-home"></i>about me page
                </a>
                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ route('aboutme.edit') }}">edit</a></li>
+                  <li><a class="dropdown-item" href="{{ route('aboutme.edit') }}">Edit</a></li>
                </ul>
             </li>
             <li class="nav-item dropdown">
@@ -44,7 +44,7 @@
                   <i class="fas fa-home"></i>the reason behind
                </a>
                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ route('reason.edit') }}">edit</a></li>
+                  <li><a class="dropdown-item" href="{{ route('reason.edit') }}">Edit</a></li>
                </ul>
             </li>
             <li class="nav-item dropdown">
@@ -52,7 +52,7 @@
                   <i class="fas fa-home"></i>website settings
                </a>
                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ route('settings.edit') }}">edit</a></li>
+                  <li><a class="dropdown-item" href="{{ route('settings.edit') }}">Edit</a></li>
                </ul>
             </li>
          </ul>
