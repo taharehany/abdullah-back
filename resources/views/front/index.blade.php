@@ -49,15 +49,13 @@
             <div class="col-lg-3 col-md-4">
                <div class="box">
                   <div class="box-image">
-                     <a href="{{ route('portfolio.show', $project->id) }}">
-                        <img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt">
-                     </a>
+                     <img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt">
                   </div>
-                  <div class="box-title">
-                     <a href="{{ route('portfolio.show', $project->id) }}">
+                  <a href="{{ route('portfolio.show', $project->id) }}">
+                     <div class="box-title">
                         <h3>{{ $project->title }}<img src="{{ asset('front/images/icons/arrow.svg') }}" alt=""></h3>
-                     </a>
-                  </div>
+                     </div>
+                  </a>
                </div>
             </div>
             @endforeach
@@ -66,14 +64,13 @@
             <div class="col-lg-3 col-md-4">
                <div class="box">
                   <div class="box-image">
-                     <a href="{{ route('portfolio.show', $project->id) }}">
-                        <img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt">
-                     </a>
+                     <img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt">
                   </div>
-                  <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
+                  <a href="{{ route('portfolio.show', $project->id) }}">
+                     <div class="box-title">
                         <h3>{{ $project->title }}<img src="{{ asset('front/images/icons/arrow.svg') }}" alt=""></h3>
-                     </a>
-                  </div>
+                     </div>
+                  </a>
                </div>
             </div>
             @endforeach
