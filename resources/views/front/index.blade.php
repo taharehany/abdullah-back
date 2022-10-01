@@ -46,7 +46,7 @@
       <div class="content">
          <div class="row">
             @foreach ($branding as $project)
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4" style="order: {{ $project->project_order }}">
                <div class="box">
                   <div class="box-image">
                      <img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt">
@@ -61,7 +61,7 @@
             @endforeach
 
             @foreach ($social as $project)
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4" style="order: {{ $project->project_order }}">
                <div class="box">
                   <div class="box-image">
                      <img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt">
