@@ -12,6 +12,13 @@
                   <li><a class="dropdown-item" href="{{ route('projects.index') }}">Show</a></li>
                   <li><a class="dropdown-item" href="{{ route('projects.create') }}">Add</a></li>
                </ul>
+
+               <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{{ route('projects.create') }}">Add New Project</a></li>
+                  <li><a class="dropdown-item" href="{{ route('projects.index') }}">Show Branding</a></li>
+                  <li><a class="dropdown-item" href="{{ route('projects.index') }}">Show Social Media</a></li>
+                  <li><a class="dropdown-item" href="{{ route('projects.index') }}">Show UI UX Design</a></li>
+               </ul> -->
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" role="button">

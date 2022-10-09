@@ -115,7 +115,7 @@ $(document).ready(function () {
       <div class="col-lg-5">
          <div class="form-group">
             <label>image</label>
-            <input class="form-control" type="file" name="image[]" multiple="" accept=".png, .jpg, .jpeg, .svg">
+            <input class="form-control" type="file" name="image[]" multiple="" accept=".png, .jpg, .jpeg, .svg" required="">
          </div>
       </div>
       <div class="col-lg-2">
