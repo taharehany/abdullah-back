@@ -26,6 +26,6 @@ class Project extends Model
     ];
 
     public function Details(){
-      return $this->hasMany(ProjectDetails::class, 'project_id')->orderby('id', 'DESC');
+      return $this->hasMany(ProjectDetails::class, 'project_id');
     }
 }
