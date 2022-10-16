@@ -13,8 +13,8 @@
       </div> -->
       <div class="main-title">
          <h2>{{ $project->title }}</h2>
-         <p>ABOUT: {{ $project->description }}</p>
-         <p>Mission: {{ $project->mission }}</p>
+         <p><strong>ABOUT:</strong> {{ $project->description }}</p>
+         <p><strong>MISSION:</strong> {{ $project->mission }}</p>
       </div>
       <div class="content">
          <div class="row">
