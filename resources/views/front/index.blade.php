@@ -7,7 +7,11 @@
 <section class="hero">
    <div class="container">
       <div class="content">
-         <div class="logo"><img class="img-fluid" src="{{ asset('front/images/logo.svg') }}" alt="alt"></div>
+         <!-- <div class="logo"><img class="img-fluid" src="{{ asset('front/images/logo.svg') }}" alt="alt"></div> -->
+         <div class="logo">
+            <img class="text img-fluid" src="{{ asset('front/images/icons/pi.svg') }}" alt="alt">
+            <img class="icon img-fluid" src="{{ asset('front/images/icons/pi-icon.svg') }}" alt="alt">
+         </div>
          <div class="button"><a class="btn" href="{{ route('about') }}">about me</a></div>
       </div>
    </div>
