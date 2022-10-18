@@ -62,9 +62,19 @@
          <div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" aria-labelledby="offcanvasTopLabel">
             <div class="mobile-menu">
                <div class="content-mobile">
-                  <div class="logo"><a href="/"><img class="img-fluid" src="{{ asset('front/images/header-logo.svg') }}" alt="alt"></a></div>
-                  <div class="links"><a href="{{ route('portfolio') }}">portfolio </a><a href="{{ route('about') }}">about me<span class="separ">&</span>contacts</a></div>
-                  <div class="social-media"><a href=""><i class="fa-brands fa-behance"> </i></a><a href="" style="color: #FF0000"><i class="fa-solid fa-envelope"> </i></a><a href="" style="color: #3DDE5A"><i class="fa-brands fa-whatsapp"></i></a></div>
+                  <div class="logo">
+                     <a href="/">
+                        <img class="img-fluid" src="{{ asset('front/images/header-logo.svg') }}" alt="alt">
+                     </a>
+                  </div>
+                  <div class="links">
+                     <a href="{{ route('portfolio') }}">portfolio </a><a href="{{ route('about') }}">about me<span class="separ">&</span>contacts</a>
+                  </div>
+                  <div class="social-media">
+                     <a href="{{ settings()->behance }}"><i class="fa-brands fa-behance"> </i></a>
+                     <a href="mailto:{{ settings()->email1 }}" style="color: #FF0000"><i class="fa-solid fa-envelope"> </i></a>
+                     <a href="https://wa.me/{{ settings()->whatsapp }}" style="color: #3DDE5A"><i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
                </div>
                <div class="close" id="close-menu">
                   <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
