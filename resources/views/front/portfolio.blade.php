@@ -42,15 +42,14 @@
          @foreach ($projects as $project)
          @if ($project->type == 'social_media')
          <div class="box" style="order: {{ $project->project_order }}">
-         
             <a href="{{ route('portfolio.show', $project->id) }}">
                <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
             </a>
             <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
-                  <h3>here is title</h3>
+                  <h3>{{ $project->title }}</h3>
                </a></div>
             <div class="box-description">
-               <p>The best designs related to the user interface with more than a year of experience and the number of designs for more than five sites.</p>
+               <p>{{ $project->description }}</p>
             </div>
          </div>
          @endif
@@ -75,10 +74,10 @@
                <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
             </a>
             <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
-                  <h3>here is title</h3>
+                  <h3>{{ $project->title }}</h3>
                </a></div>
             <div class="box-description">
-               <p>The best designs related to the user interface with more than a year of experience and the number of designs for more than five sites.</p>
+               <p>T{{ $project->description }}</p>
             </div>
          </div>
          @endif
