@@ -13,8 +13,10 @@
       </div> -->
       <div class="main-title">
          <h2>{{ $project->title }}</h2>
-         <p><strong>ABOUT:</strong> {{ $project->description }}</p>
-         <p><strong>MISSION:</strong> {{ $project->mission }}</p>
+         @if($project->type !== 'social_media')
+            <p><strong>ABOUT:</strong> {{ $project->description }}</p>
+            <p><strong>MISSION:</strong> {{ $project->mission }}</p>
+         @endif
       </div>
       <div class="content">
          <div class="row">
