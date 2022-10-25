@@ -23,6 +23,7 @@ class Project extends Model
         'mission',
         'main_image',
         'type',
+        'url',
     ];
 
     public function Details(){

@@ -23,6 +23,7 @@ class CreateProjectsTable extends Migration
             $table->string('images')->nullable();
             $table->string('main_image');
             $table->enum('type', ['branding', 'social_media', 'ui_ux_design']);
+            $table->string('url')->nullable();
             $table->timestamps();
         });
     }

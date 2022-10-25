@@ -70,14 +70,16 @@
          @foreach ($projects as $project)
          @if ($project->type == 'ui_ux_design')
          <div class="box" style="order: {{ $project->project_order }}">
-            <a href="{{ route('portfolio.show', $project->id) }}">
+            <a href="{{ $project->url }}">
                <div class="box-image"><img class="img-fluid" src="{{ asset($project->main_image) }}" alt="alt"></div>
             </a>
-            <div class="box-title"><a href="{{ route('portfolio.show', $project->id) }}">
+            <div class="box-title">
+               <a href="{{ $project->url }}">
                   <h3>{{ $project->title }}</h3>
-               </a></div>
+               </a>
+            </div>
             <div class="box-description">
-               <p>T{{ $project->description }}</p>
+               <p>{{ $project->description }}</p>
             </div>
          </div>
          @endif

@@ -1,7 +1,18 @@
- <footer>
+<!--to top-->
+<div id="toTop">
+   <button>
+      <img src="{{ asset('front/images/icons/up.svg') }}" alt="">
+   </button>
+</div>
+<!--to top-->
+<footer>
     <div class="container">
        <div class="content">
-          <div class="footer-logo"><img class="light img-fluid" src="{{ asset(settings()->inline_logo) }}" alt="alt"><img class="dark img-fluid" src="{{ asset(settings()->inline_logo_dark) }}" alt="alt">
+          <div class="footer-logo">
+             @if((request()->is('/')))
+             <img class="light img-fluid" src="{{ asset(settings()->inline_logo) }}" alt="alt">
+             <img class="dark img-fluid" src="{{ asset(settings()->inline_logo_dark) }}" alt="alt">
+             @endif
              <p>I have spent three years of my life learning and developing my graphic design career Graphic design helped me a lot in finding myself renewing my passion for art and everything related to it since my childhood I love drawing, colors and nature, besides my special love for engineering graphics And abstract graphics .</p>
           </div>
           <div class="footer-links"><a href="{{ route('portfolio') }}">portfolio </a><a href="{{ route('about') }}">about me&contacts</a></div>

@@ -110,6 +110,12 @@
                      </div>
                   </div>
                   <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>url</label>
+                        <input class="form-control" type="url" name="url" placeholder="url" value="{{ old('url', $data->url) }}">
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
                      <div class="form-btn">
                         <button class="btn btn-primary hvr-sweep-to-top" type="submit">Save changes</button>
                      </div>
