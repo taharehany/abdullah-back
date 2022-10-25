@@ -30,8 +30,12 @@
          <!--navbar desktop-->
          <nav class="navbar main-nav navbar-expand-lg">
             <div class="container">
-               <div class="content"><a class="navbar-brand" href="/">
-                     <div class="logo"><img class="light img-fluid" src="{{ asset(settings()->small_logo) }}" alt="alt"><img class="dark img-fluid" src="{{ asset(settings()->small_logo_dark) }}" alt="alt"></div>
+               <div class="content">
+                  <a class="navbar-brand" href="/">
+                     <div class="logo">
+                        <img class="light img-fluid" src="{{ asset(settings()->small_logo) }}" alt="alt">
+                        <img class="dark img-fluid" src="{{ asset(settings()->small_logo_dark) }}" alt="alt">
+                     </div>
                   </a>
                   <div class="collapse navbar-collapse" id="navbarNav">
                      <ul class="navbar-nav">
