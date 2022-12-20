@@ -21,6 +21,12 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
    <link rel="stylesheet" href="{{ asset('front/css/plugins.css') }}">
    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
+   <style>
+      section.single-portfolio .content .box-image {
+         height: 300px;
+         background-color: red;
+      }
+   </style>
 </head>
 
 <body>
