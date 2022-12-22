@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Page;
 use Illuminate\Http\Request;
 
-class HeroController extends Controller
+class ReasonController extends Controller
 {
    /**
     * Show the form for editing the specified resource.
