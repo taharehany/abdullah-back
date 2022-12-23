@@ -21,6 +21,14 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
    <link rel="stylesheet" href="{{ asset('front/css/plugins.css') }}">
    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
+   <style>
+      section.what-can .content .box .box-icon img {
+         height: 100px;
+         width: 140px;
+         -o-object-fit: contain;
+         object-fit: contain;
+      }
+   </style>
 </head>
 
 <body>
