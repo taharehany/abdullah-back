@@ -27,7 +27,7 @@
          object-fit: contain;
       }
       section.cv .content .main-title h2 {
-         font-size: 26px;
+         /* font-size: 26px; */
       }
    </style>
 </head>
