@@ -23,10 +23,11 @@
    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
    <style>
       section.what-can .content .box .box-icon img {
-         height: 100px;
-         width: 140px;
          -o-object-fit: contain;
          object-fit: contain;
+      }
+      section.cv .content .main-title h2 {
+         font-size: 26px;
       }
    </style>
 </head>
