@@ -43,7 +43,7 @@
                      <div class="form-group">
                         <label>main image</label>
                         <img class="preview" src="{{ asset($data->main_image) }}">
-                        <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg">
+                        <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg, .gif">
                      </div>
                   </div>
                   <div class="col-lg-12 mb-5">

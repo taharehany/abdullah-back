@@ -42,7 +42,7 @@
                   <div class="col-lg-12">
                      <div class="form-group">
                         <label>main image</label>
-                        <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg" required="">
+                        <input class="form-control" type="file" name="main_image" accept=".png, .jpg, .jpeg, .svg, .gif" required="">
                      </div>
                   </div>
                   <div class="col-lg-12 mb-5">
