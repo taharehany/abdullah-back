@@ -59,7 +59,7 @@
                            <div class="form-group">
                               <label>image</label>
                               <img class="preview" class="preview" src="{{ asset($value->image) }}">
-                              <input class="form-control" type="file" value="{{$value->image}}" name="image[{{$value->id}}]" multiple accept=".png, .jpg, .jpeg, .svg">
+                              <input class="form-control" type="file" value="{{$value->image}}" name="image[{{$value->id}}]" multiple accept=".png, .jpg, .jpeg, .svg, .gif">
                            </div>
                         </div>
                         <div class="col-lg-2">
