@@ -30,7 +30,7 @@
          /* font-size: 26px; */
       }
       section.single-portfolio .content .box-image img {
-         max-height: 950px;
+         max-height: auto;
       }
    </style>
 </head>
