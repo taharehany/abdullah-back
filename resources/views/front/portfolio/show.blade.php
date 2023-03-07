@@ -14,7 +14,7 @@
       <div class="main-title">
          <h2>{{ $project->title }}</h2>
          @if($project->type !== 'social_media')
-            <p><strong>ABOUT:</strong> {{ $project->description }}</p>
+            <p><strong>ABOUT:</strong> {{ $project->about }}</p>
             <p><strong>MISSION:</strong> {{ $project->mission }}</p>
          @endif
       </div>

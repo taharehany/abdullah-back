@@ -25,6 +25,12 @@
       .signin-area, .signup-area {
          display: block
       }
+      .form {
+          padding: 15px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          margin-top: 50px !important;
+      }
     </style>
   </head>
   <body>
