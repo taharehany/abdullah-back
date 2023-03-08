@@ -31,6 +31,10 @@
       }
       section.single-portfolio .content .box-image img {
          max-height: unset;
+         image-rendering: -moz-crisp-edges;
+         image-rendering: -o-crisp-edges;
+         image-rendering: -webkit-optimize-contrast;
+          -ms-interpolation-mode: nearest-neighbor;
       }
    </style>
 </head>
