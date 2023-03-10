@@ -79,6 +79,13 @@ if (!function_exists('settings')) {
    }
 }
 
+if (!function_exists('aboutme')) {
+   function aboutme()
+   {
+      return App\Models\Page::where('identifier', 'aboutme')->first();
+   }
+}
+
 if (!function_exists('is_active_menu')) {
 
    function is_active_menu($url)

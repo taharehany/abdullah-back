@@ -13,7 +13,7 @@
                <img class="light img-fluid" src="{{ asset(settings()->inline_logo) }}" alt="alt">
                <img class="dark img-fluid" src="{{ asset(settings()->inline_logo_dark) }}" alt="alt">
             </a>
-             <p>{{ $aboutme->description }}</p>
+             <p>{{ aboutme()->description }}</p>
           </div>
           <div class="footer-links"><a href="{{ route('portfolio') }}">portfolio </a><a href="{{ route('about') }}">about me&contacts</a></div>
           <div class="social-media">
